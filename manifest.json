@@ -9,5 +9,6 @@
   },
   "permissions": [
     "http://www.selfnet.de/*"
-  ]
+  ], 
+  "icons": {"24": "favicon.png" }
 }
