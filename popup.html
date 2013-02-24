@@ -3,9 +3,16 @@
   <head>
     <title>Selfnet Quota</title>
     <style>
+      @import url(http://fonts.googleapis.com/css?family=Galindo|Armata);
       body {
         min-width:357px;
         overflow-x:hidden;
+        font-family: Armata;
+        font-size: 10px;
+      }
+      h1 {
+        font-size: 1.5em;
+        font-family: Galindo;
       }
 
       img {
@@ -15,20 +22,43 @@
         width:75px;
         height:75px;
       }
+      #wrapper{
+        width:350px;
+        border: 1px solid #eee;
+        padding: 2px;
+        border-radius: 5px;
+
+      }
+      #cssbalken{
+        height:25px;
+        background-image: -webkit-linear-gradient(#336633 0%, #99FF88 100%);
+        border-radius: 5px;
+      }
+      #text {
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        height:25px;
+        border-radius: 5px;
+      }
+
+      #used {
+        border-radius: 5px;
+        background-color:#663333; 
+        background-image: -webkit-linear-gradient(#FF8811 0%, #663333 100%);
+
+      }
     </style>
-
-    <!-- JavaScript and HTML must be in separate files for security. -->
-
-    <script src="jquery-1.8.3.min.js"></script>
-    <script src="flot/jquery.flot.js"></script>
     <script src="popup.js"></script>
   </head>
   <body>
     <h1>Selfnet Quota</h1>
-    <div id="placeholder" style="width:300px;height:150px">
+    <div id ="wrapper">
+      <div id="cssbalken">
+      </div>
+      <div id="text">
+      </div>
     </div>
-    <div id="cssbalken" style="width:300px;height:150px;background:green;"></div>
-    <p>This is your Selfnet Quota</p>
-    <p>This Extension is OpenSource, please visit <a href="https://github.com/ofesseler/selfnet-quota">Selfnet Quota on Github</a>
+    <p>This Extension is under LGPL, please star <a href="https://github.com/ofesseler/selfquota">Selfnet Quota on Github</a>
   </body>
 </html>
